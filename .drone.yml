@@ -9,6 +9,8 @@ steps:
   - name: lib
     path: /tmp/cache
   commands:
+  - docker pull node
+  - docker save node:latest -o /tmp/cache.node.tar
   - pwd
   - ls /tmp/cache
   - echo hello
