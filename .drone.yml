@@ -5,8 +5,12 @@ name: default
 steps:
 - name: greeting
   image: alpine
+  volumes:
+  - name: cache
+    path: /tmp/cache
   commands:
   - pwd
+  - ls /tmp/cache
   - echo hello
   - echo world
 
