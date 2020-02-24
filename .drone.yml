@@ -6,7 +6,7 @@ steps:
 - name: greeting
   image: alpine
   volumes:
-  - name: cache
+  - name: lib
     path: /tmp/cache
   commands:
   - pwd
