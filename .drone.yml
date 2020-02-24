@@ -6,5 +6,11 @@ steps:
 - name: greeting
   image: alpine
   commands:
+  - pwd
   - echo hello
   - echo world
+
+volumes:
+- name: lib
+  host:
+    path: /var/lib
